@@ -2655,7 +2655,7 @@ class Mission
 				{
 					position[]={3277.5063,2.2180922,12968.937};
 					azimut=182.058;
-					offsetY=0.2;
+					offsetY=0.30000001;
 					special="NONE";
 					id=145;
 					side="WEST";
@@ -3460,7 +3460,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3367.1643,2.00104,12952.89};
+					position[]={3366.0781,2.0017653,12953.161};
 					special="NONE";
 					id=207;
 					side="LOGIC";
@@ -3468,7 +3468,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="lampspot_police_hq_1";
-					init="if (isServer) then {_lamp = createVehicle [""Land_LampHalogen_F"", getPos lampspot_police_hq_1,[], 1, ""CAN_COLLIDE""];};";
+					init="if (isServer) then {_lamp = createVehicle [""Land_LampHalogen_F"", getPos lampspot_police_hq_1,[], 1, ""CAN_COLLIDE""];_lamp setdir 90};";
 				};
 			};
 		};
@@ -3489,7 +3489,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="lampspot_police_hq_2";
-					init="if (isServer) then {_lamp = createVehicle [""Land_LampHalogen_F"", getPos lampspot_police_hq_2,[], 1, ""CAN_COLLIDE""];};";
+					init="if (isServer) then {_lamp = createVehicle [""Land_LampHalogen_F"", getPos lampspot_police_hq_2,[], 1, ""CAN_COLLIDE""];_lamp setdir 180};";
 				};
 			};
 		};
@@ -3510,7 +3510,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="lampspot_police_hq_3";
-					init="if (isServer) then {_lamp = createVehicle [""Land_LampHalogen_F"", getPos lampspot_police_hq_3,[], 1, ""CAN_COLLIDE""];};";
+					init="if (isServer) then {_lamp = createVehicle [""Land_LampHalogen_F"", getPos lampspot_police_hq_3,[], 1, ""CAN_COLLIDE""];_lamp setdir 225};";
 				};
 			};
 		};
@@ -3531,7 +3531,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="lampspot_police_hq_5";
-					init="if (isServer) then {_lamp = createVehicle [""Land_LampHarbour_F"", getPos lampspot_police_hq_5,[], 1, ""CAN_COLLIDE""];};";
+					init="if (isServer) then {_lamp = createVehicle [""Land_LampHarbour_F"", getPos lampspot_police_hq_5,[], 1, ""CAN_COLLIDE""];_lamp setdir 135};";
 				};
 			};
 		};
@@ -3543,7 +3543,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3250.2722,2.1152401,12963.112};
+					position[]={3249.2839,2.1112869,12963.112};
 					azimut=270;
 					special="NONE";
 					id=211;
@@ -3552,14 +3552,14 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="lampspot_police_hq_4";
-					init="if (isServer) then {_lamp = createVehicle [""Land_LampHarbour_F"", getPos lampspot_police_hq_4,[], 1, ""CAN_COLLIDE""];};";
+					init="if (isServer) then {_lamp = createVehicle [""Land_LampHarbour_F"", getPos lampspot_police_hq_4,[], 1, ""CAN_COLLIDE""];_lamp setdir 270};";
 				};
 			};
 		};
 	};
 	class Vehicles
 	{
-		items=491;
+		items=490;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -8350,35 +8350,35 @@ class Mission
 		};
 		class Item483
 		{
-			position[]={3359.8601,3.9500035e-005,12943.188};
-			azimut=133;
-			special="NONE";
-			id=695;
-			side="EMPTY";
-			vehicle="Land_CncWall1_F";
-			skill=0.60000002;
-		};
-		class Item484
-		{
 			position[]={3630.5632,10.173317,13098.419};
 			azimut=180;
-			id=696;
+			id=695;
 			side="EMPTY";
 			vehicle="Land_WoodenCart_F";
 			skill=0.60000002;
 		};
-		class Item485
+		class Item484
 		{
 			position[]={3634.8689,10.153481,13097.641};
 			azimut=180;
-			id=697;
+			id=696;
 			side="EMPTY";
 			vehicle="Land_CratesWooden_F";
 			skill=0.60000002;
 		};
-		class Item486
+		class Item485
 		{
 			position[]={3352.3438,2.2250719,12969.953};
+			azimut=220;
+			id=697;
+			side="EMPTY";
+			vehicle="Land_Sign_WarningMilitaryArea_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item486
+		{
+			position[]={3363.2434,2.0285449,12960.641};
 			azimut=220;
 			id=698;
 			side="EMPTY";
@@ -8388,38 +8388,28 @@ class Mission
 		};
 		class Item487
 		{
-			position[]={3363.2434,2.0285449,12960.641};
-			azimut=220;
-			id=699;
-			side="EMPTY";
-			vehicle="Land_Sign_WarningMilitaryArea_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
-		class Item488
-		{
 			position[]={3638.9565,10.146875,13097.628};
 			azimut=220;
-			id=700;
+			id=699;
 			side="EMPTY";
 			vehicle="Land_Pallets_stack_F";
 			skill=0.60000002;
 		};
-		class Item489
+		class Item488
 		{
 			position[]={3652.5913,10.257523,13129.953};
 			azimut=2;
-			id=701;
+			id=700;
 			side="EMPTY";
 			vehicle="Land_Crash_barrier_F";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
-		class Item490
+		class Item489
 		{
 			position[]={3636.1936,10.123034,13114.806};
 			azimut=273;
-			id=702;
+			id=701;
 			side="EMPTY";
 			vehicle="Land_Crash_barrier_F";
 			skill=0.60000002;
@@ -10085,7 +10075,6 @@ class Mission
 			a=40;
 			angle=177.45399;
 			rectangular=1;
-			activationBy="CIV";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -10102,13 +10091,10 @@ class Mission
 			b=30;
 			angle=-2.5763099;
 			rectangular=1;
-			activationBy="CIV";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
 			name="Police_HQ_Alarm_2";
-			expActiv="alarmOn = createSoundSource [""Sound_Alarm"", position Police_HQ_Alarm_2, [], 0];";
-			expDesactiv="deletevehicle alarmOn;";
 			class Effects
 			{
 			};
@@ -10120,13 +10106,10 @@ class Mission
 			b=10;
 			angle=-3.47118;
 			rectangular=1;
-			activationBy="CIV";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
 			name="Police_HQ_Alarm_3";
-			expActiv="alarmOn = createSoundSource [""Sound_Alarm"", position Police_HQ_Alarm_3, [], 0];";
-			expDesactiv="deletevehicle alarmOn;";
 			class Effects
 			{
 			};
@@ -10138,7 +10121,6 @@ class Mission
 			b=13;
 			angle=-3.18471;
 			rectangular=1;
-			activationBy="CIV";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
