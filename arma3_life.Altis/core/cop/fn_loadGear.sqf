@@ -82,5 +82,3 @@ if(primaryWeapon player != "") then
 {
 	player selectWeapon (primaryWeapon player);
 };
-
-[[player,0,"textures/cop_default_uniform.paa"],"fn_changeUniformTextures",nil,false] spawn life_fnc_MP;
