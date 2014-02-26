@@ -8428,7 +8428,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=203;
+		items=204;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -10050,6 +10050,13 @@ class Mission
 			colorName="ColorBlue";
 			a=20;
 			b=20;
+		};
+		class Item203
+		{
+			position[]={9187.7002,14.457961,21653.582};
+			name="reb_v_1";
+			type="Empty";
+			angle=135;
 		};
 	};
 	class Sensors
