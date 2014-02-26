@@ -7,6 +7,7 @@
 */
 private["_spCfg","_sp","_spawnPos"];
 closeDialog 0;
+[[player,0,"textures/cop_default_uniform.paa"],"fn_changeUniformTextures",nil,false] spawn BIS_fnc_MP;
 if(count life_spawn_point == 0) then
 {
 	private["_sp","_spCfg"];
