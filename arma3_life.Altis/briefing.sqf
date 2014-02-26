@@ -26,17 +26,18 @@ player createDiarySubject ["controls","Steuerung"];
 		[
 			"Change Log",
 				"
-					v0.1:<br/>
-					- Added: Police HQ Barrikaden<br/>
-					- Added: Kavalla Marktplatz Barrikaden/Zäune<br/><br/>
-					
-					v0.2:<br/>
-					- Added: Police HQ Schranke + weitere Barrikaden<br/>
-					- Edited: Marktplatz Kavalla Design<br/>
-					- Edited: Map Marker Namen auf deutsch<br/>
-					- Edited: Map Menü auf deutsch (teilweise)<br/>
-					- Moved: Auto Shop + Fahrzeuglizenzen Händler<br/>
-					- Moved: Police HQ Item Händler<br/>
+					Alle Änderungen, Bugfixes und Co unter:<br/>
+					https://github.com/t1lt3rr0r/Altis-Life/commits/master<br/><br/>
+				"
+		]
+	];
+	
+	player createDiaryRecord ["changelog",
+		[
+			"Bugs/Features",
+				"
+				Bitte meldet alle Bugs und gewünschte Features unter:<br/>
+				https://github.com/t1lt3rr0r/Altis-Life/issues<br/><br/>
 				"
 		]
 	];
@@ -57,7 +58,7 @@ player createDiarySubject ["controls","Steuerung"];
 				"
 				1. nicht in fremde Rucksäcke gucken.<br/>
 				2. Waffenverbot in Kavalla! Waffen müssen verdeckt getragen werden..<br/>
-				3. Komplettes Start- sowie Landeverbot für Helikopter in Kavalla.<br/>
+				3. Komplettes Flugverbot, Start- sowie Landeverbot für Helikopter in Kavalla.<br/>
 				4. Unfälle müssen sofort der Polizei gemeldet werden.<br/>
 				5. Fahrverbot für gepanzerte Fahrzeug innerhalb von Kavalla. Ausnahme: Von der Garage oder bis zur Garage.<br/>
 				6. Tempolimits: 30Km/h Marktplatz Kavalla / 50Km/h innerorts / 100Km/h außerorts<br/><br/>
@@ -205,10 +206,10 @@ player createDiarySubject ["controls","Steuerung"];
 	
 	player createDiaryRecord ["serverinfo",
 		[
-			"Teamspeak",
+			"Bugs/Features",
 				"
-				Teamspeak 3 Server unter:<br/><br/>
-				CommunityPZMZ.nitrado.net<br/><br/>
+				Bitte meldet alle Bugs und gewünschte Features unter:<br/>
+				https://github.com/t1lt3rr0r/Altis-Life/issues<br/><br/>
 				"
 		]
 	];
@@ -227,49 +228,20 @@ player createDiarySubject ["controls","Steuerung"];
 				http://de.twitch.tv/t1lt3rr0r_LIVE<br/><br/>
 				"
 		]
-	];		
+	];
+	
+	player createDiaryRecord ["serverinfo",
+		[
+			"Teamspeak",
+				"
+				Teamspeak 3 Server unter:<br/><br/>
+				CommunityPZMZ.nitrado.net<br/><br/>
+				"
+		]
+	];
 	
 // Police Section
-	player createDiaryRecord ["policerules",
-		[
-			"Bußgeldkatalog",
-				"
-				- Falsch parken: 100$<br/>
-				- Fahren ohne Licht: 200$<br/>
-				- Zu schnelles Fahren: 400$<br/>
-				- Beschädigung öffentlichen Eigentums: 1500$<br/>
-				- Fahren ohne Fahrerlizenz: 2000$<br/>
-				- Autodiebstahl: 3000$<br/>
-				- Versuchter Autodiebstahl: xxxx$<br/>
-				- Unfallflucht: 3500$<br/>
-				- Flucht vor der Polizei: 5000$<br/>
-				- Abfeuern von Schusswaffen: 10000$<br/>
-				- Mitführen von illegalen Items: Gefängnis<br/>
-				- Mord: Gefängnis<br/><br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["policerules",
-		[
-			"Teamspeak Regel",
-				"
-				1. Alle Polizisten müssen auf dem Teamspeak 3 Server im Cop-Channel sein. Sollte dies nicht der Fall sein, kann es zum Ausschluss des Polizeiteams kommen.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["policerules",
-		[
-			"Use of Lethal Force",
-				"
-				1. Use of Lethal force is only permitted for the protection of your life, another officers life, or a civilians life, if and only if non-lethal force would not be effective.<br/>
-				2. Discharging of a weapon when not under threat or not during training exercises is not allowed. Officers caught in violation of this rule will be removed from the server and suspended from the SPD.<br/>
-				3. Failure to follow proper weapons discipline and procedure will get you removed from the server and suspended from the SPD.<br/><br/>
-				"
-		]
-	];
-	
+
 	player createDiaryRecord ["policerules",
 		[
 			"Chain of Command",
@@ -389,21 +361,8 @@ player createDiarySubject ["controls","Steuerung"];
 				"
 		]
 	];
-	
-		player createDiaryRecord ["policerules",
-		[
-			"Geschwindigkeiten", 
-				"
-				Die folgenden Geschwindigkeitsbegrenzungen sind von der Polizei zu prüfen um die Sicherheit der Bewohner von Altis zu gewährleisten.<br/><br/>
-				
-				Marktplatz Kavalla: 30Km/h<br/>
-				Innerorts: 50Km/h<br/>
-				Außerorts: 100Km/h<br/><br/>
-				"
-		]
-	];
-	
-		player createDiaryRecord ["policerules",
+		
+	player createDiaryRecord ["policerules",
 		[
 			"Vehicles", 
 				"
@@ -513,6 +472,59 @@ player createDiarySubject ["controls","Steuerung"];
 		]
 	];
 	
+	player createDiaryRecord ["policerules",
+		[
+			"Use of Lethal Force",
+				"
+				1. Use of Lethal force is only permitted for the protection of your life, another officers life, or a civilians life, if and only if non-lethal force would not be effective.<br/>
+				2. Discharging of a weapon when not under threat or not during training exercises is not allowed. Officers caught in violation of this rule will be removed from the server and suspended from the SPD.<br/>
+				3. Failure to follow proper weapons discipline and procedure will get you removed from the server and suspended from the SPD.<br/><br/>
+				"
+		]
+	];
+	
+	player createDiaryRecord ["policerules",
+		[
+			"Geschwindigkeiten", 
+				"
+				Die folgenden Geschwindigkeitsbegrenzungen sind von der Polizei zu prüfen um die Sicherheit der Bewohner von Altis zu gewährleisten.<br/><br/>
+				
+				Marktplatz Kavalla: 30Km/h<br/>
+				Innerorts: 50Km/h<br/>
+				Außerorts: 100Km/h<br/><br/>
+				"
+		]
+	];
+	
+	player createDiaryRecord ["policerules",
+		[
+			"Bußgeldkatalog",
+				"
+				- Falsch parken: 100$<br/>
+				- Fahren ohne Licht: 200$<br/>
+				- Zu schnelles Fahren: 400$<br/>
+				- Beschädigung öffentlichen Eigentums: 1500$<br/>
+				- Fahren ohne Fahrerlizenz: 2000$<br/>
+				- Autodiebstahl: 3000$<br/>
+				- Versuchter Autodiebstahl: 2000$<br/>
+				- Unfallflucht: 3500$<br/>
+				- Flucht vor der Polizei: 5000$<br/>
+				- Abfeuern von Schusswaffen: 10000$<br/>
+				- Mitführen von illegalen Items: Gefängnis<br/>
+				- Mord: Gefängnis + 13000$<br/><br/><br/>
+				"
+		]
+	];
+	
+	player createDiaryRecord ["policerules",
+		[
+			"Teamspeak Regel",
+				"
+				1. Alle Polizisten müssen auf dem Teamspeak 3 Server im Cop-Channel sein. Sollte dies nicht der Fall sein, kann es zum Ausschluss des Polizeiteams kommen.<br/><br/>
+				"
+		]
+	];
+
 // Illegal Items Section
 	player createDiaryRecord ["illegalitems",
 		[
