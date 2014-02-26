@@ -33,10 +33,3 @@ if(!StartProgress) then
 	[8,true,false] execFSM "core\fsm\core_time.fsm";
 };
 StartProgress = true;
-
-fn_changeUniformTextures = 
-{
-	_unit = _this select 0;
-	_texture = _this select 1;
-	_unit setObjectTexture [_texture];
-};
