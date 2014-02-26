@@ -3286,7 +3286,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					skill=0.60000002;
 					text="h1_5";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];";
 				};
 			};
 		};
@@ -3494,7 +3494,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="lampspot_police_hq_1";
-					init="if (isServer) then {_lamp = createVehicle [""Land_LampHalogen_F"", getPos lampspot_police_hq_1,[], 1, ""CAN_COLLIDE""];_lamp setdir 90};";
+					init="if (isServer) then {_lamp = createVehicle [""Land_LampHalogen_F"", getPos lampspot_police_hq_1,[], 1, ""CAN_COLLIDE""];_lamp setdir 90;_lamp allowDamage false;};";
 				};
 			};
 		};
@@ -3515,7 +3515,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="lampspot_police_hq_2";
-					init="if (isServer) then {_lamp = createVehicle [""Land_LampHalogen_F"", getPos lampspot_police_hq_2,[], 1, ""CAN_COLLIDE""];_lamp setdir 180};";
+					init="if (isServer) then {_lamp = createVehicle [""Land_LampHalogen_F"", getPos lampspot_police_hq_2,[], 1, ""CAN_COLLIDE""];_lamp setdir 180;_lamp allowDamage false;};";
 				};
 			};
 		};
@@ -3536,7 +3536,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="lampspot_police_hq_3";
-					init="if (isServer) then {_lamp = createVehicle [""Land_LampHalogen_F"", getPos lampspot_police_hq_3,[], 1, ""CAN_COLLIDE""];_lamp setdir 225};";
+					init="if (isServer) then {_lamp = createVehicle [""Land_LampHalogen_F"", getPos lampspot_police_hq_3,[], 1, ""CAN_COLLIDE""];_lamp setdir 225; _lamp allowDamage false;};";
 				};
 			};
 		};
@@ -3557,7 +3557,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="lampspot_police_hq_5";
-					init="if (isServer) then {_lamp = createVehicle [""Land_LampHarbour_F"", getPos lampspot_police_hq_5,[], 1, ""CAN_COLLIDE""];_lamp setdir 135};";
+					init="if (isServer) then {_lamp = createVehicle [""Land_LampHarbour_F"", getPos lampspot_police_hq_5,[], 1, ""CAN_COLLIDE""];_lamp setdir 135;_lamp allowDamage false;};";
 				};
 			};
 		};
@@ -3578,7 +3578,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="lampspot_police_hq_4";
-					init="if (isServer) then {_lamp = createVehicle [""Land_LampHarbour_F"", getPos lampspot_police_hq_4,[], 1, ""CAN_COLLIDE""];_lamp setdir 270};";
+					init="if (isServer) then {_lamp = createVehicle [""Land_LampHarbour_F"", getPos lampspot_police_hq_4,[], 1, ""CAN_COLLIDE""];_lamp setdir 270;_lamp allowDamage false;};";
 				};
 			};
 		};
@@ -3619,7 +3619,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="lampspot_garage_1";
-					init="if (isServer) then {_lamp = createVehicle [""Land_LampShabby_F"", getPos lampspot_garage_1,[], 1, ""CAN_COLLIDE""]; _lamp setdir 100; };";
+					init="if (isServer) then {_lamp = createVehicle [""Land_LampShabby_F"", getPos lampspot_garage_1,[], 1, ""CAN_COLLIDE""]; _lamp setdir 100; _lamp allowDamage false;}; ";
 				};
 			};
 		};
@@ -3639,7 +3639,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="lampspot_garage_2";
-					init="if (isServer) then {_lamp = createVehicle [""Land_LampShabby_F"", getPos lampspot_garage_2,[], 1, ""CAN_COLLIDE""]; _lamp setdir 140;};";
+					init="if (isServer) then {_lamp = createVehicle [""Land_LampShabby_F"", getPos lampspot_garage_2,[], 1, ""CAN_COLLIDE""]; _lamp setdir 140;_lamp allowDamage false;};";
 				};
 			};
 		};
