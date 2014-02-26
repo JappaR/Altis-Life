@@ -32,13 +32,39 @@ _backpack = [_itemArray,1,"",[""]] call BIS_fnc_param;
 _goggles = [_itemArray,2,"",[""]] call BIS_fnc_param;
 _headgear = [_itemArray,3,"",[""]] call BIS_fnc_param;
 _items = [_itemArray,4,[],[[]]] call BIS_fnc_param;
-_uItems = [_itemArray,5,[],[[]]] call BIS_fnc_param;
-_bItems = [_itemArray,6,[],[[]]] call BIS_fnc_param;
+_primary = [_itemArray,5,"",[""]] call BIS_fnc_param;
+_launcher = [_itemArray,6,"",[""]] call BIS_fnc_param;
+_handgun = [_itemArray,7,"",[""]] call BIS_fnc_param;
+_vest = [_itemArray,8,"",[""]] call BIS_fnc_param;
+_primitems = [_itemArray,9,[],[[]]] call BIS_fnc_param;
+_handgunitems = [_itemArray,10,[],[[]]] call BIS_fnc_param;
+_magazines = [_itemArray,11,[],[[]]] call BIS_fnc_param;
+_uItems = [_itemArray,12,[],[[]]] call BIS_fnc_param;
+_bItems = [_itemArray,13,[],[[]]] call BIS_fnc_param;
+_vItems = [_itemArray,14,[],[[]]] call BIS_fnc_param;
+//_secitems = [_itemArray,9,[],[[]]] call BIS_fnc_param;
 
 if(_uniform != "") then {_handle = [_uniform,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if(_backpack != "") then {_handle = [_backpack,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if(_goggles != "") then {_handle = [_goggles,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if(_headgear != "") then {_handle = [_headgear,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+if(_vest != "") then {_handle = [_vest,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+{
+	_handle = [_x,true,false,false,false] spawn life_fnc_handleItem;
+	waitUntil {scriptDone _handle};
+} foreach _magazines;
+if(_primary != "") then {[_primary,true,false,false,false] spawn life_fnc_handleItem;};
+if(_launcher != "") then {[_launcher,true,false,false,false] spawn life_fnc_handleItem;};
+if(_handgun != "") then {[_handgun,true,false,false,false] spawn life_fnc_handleItem;};
 {_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};} foreach _items;
 {[_x,true,false,false,true] call life_fnc_handleItem;} foreach (_uItems);
 {[_x,true,true,false,false] call life_fnc_handleItem;} foreach (_bItems);
+{[_x,true,false,false,true] call life_fnc_handleItem;} foreach (_vItems);
+{[_x,true,false,true,false] call life_fnc_handleItem;} foreach (_primitems);
+//{[_x,true,false,true,false] call life_fnc_handleItem;} foreach (_secitems);
+{[_x,true,false,true,false] call life_fnc_handleItem;} foreach (_handgunitems);
+
+if(primaryWeapon player != "") then
+{
+	player selectWeapon (primaryWeapon player);
+};
