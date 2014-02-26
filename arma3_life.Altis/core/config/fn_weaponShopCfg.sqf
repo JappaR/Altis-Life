@@ -90,7 +90,6 @@ switch(_shop) do
 						["30Rnd_65x39_caseless_mag",nil,100],
 						["30Rnd_9x21_Mag",nil,60],
 						["9Rnd_45ACP_Mag",nil,200]
-						["SmokeShell",nil,500]
 					]
 				];
 			};
