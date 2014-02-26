@@ -10,4 +10,7 @@ _vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _state = [_this,1,2,[0,false]] call BIS_fnc_param;
 if(isNull _vehicle) exitWith {};
 
+// Car lock sound (see description.ext for filepath)
+_vehicle say3D "Carlock";
+
 _vehicle lock _state;
