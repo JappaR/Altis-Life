@@ -278,6 +278,10 @@ if(playerSide == west) then
 	};
 };
 
+if ((life_veh_shop == "civ_service_car") && (_veh == "C_Offroad_01_F")) then {
+	[_vehicle,"service_offroad",true] call life_fnc_vehicleAnimate;
+};
+
 [[_vehicle,_color],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
 
 [[(getPlayerUID player),playerSide,_vehicle,_color],"STS_fnc_vehicleCreate",false,false] spawn life_fnc_MP;

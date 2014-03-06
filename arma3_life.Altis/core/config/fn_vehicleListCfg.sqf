@@ -14,10 +14,15 @@ switch (_shop) do
 {
 	case "civ_service_car":
 	{
-		_return = 
-		[			
-			["C_Offroad_01_F",12500]
-		];
+		_serviceLevel = __GETC__(life_serviceLevel);
+		
+		if(_serviceLevel > 0) then {
+			_return = 
+			[			
+				["C_Offroad_01_F",12500]
+			];
+		};
+		
 	}; 
 	
 	case "civ_service_air":
