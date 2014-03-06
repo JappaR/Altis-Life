@@ -7,6 +7,7 @@
 */
 private["_allowedItems","_loadout","_primary","_launcher","_handgun","_magazines","_uniform","_vest","_backpack","_items","_primitems","_secitems","_handgunitems","_uitems","_vitems","_bitems","_handle"];
 _loadout = cop_gear;
+/*
 _allowedItems =
 [
 	"arifle_sdar_F",
@@ -23,6 +24,7 @@ _allowedItems =
 	"muzzle_snds_H",
 	"muzzle_snds_L"
 ];
+*/
 if(isNil "_loadout") exitWith {[] call life_fnc_copDefault;}; //Slot data doesn't exist
 if(count _loadout == 0) exitWith {[] call life_fnc_copDefault;}; //Slot data doesn't exist
 _primary = _loadout select 0;
@@ -40,9 +42,11 @@ _uitems = _loadout select 10;
 _vitems = _loadout select 11;
 _bitems = _loadout select 12;
 
+/*
 //This is to piss off cops :)
 if(!(_primary in _allowedItems)) then {_primary = ""};
 if(!(_handgun in _allowedItems)) then {_handgun = ""};
+*/
 
 //Strip the unit down
 RemoveAllWeapons player;

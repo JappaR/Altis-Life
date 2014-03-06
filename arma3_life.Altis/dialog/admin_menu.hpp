@@ -79,5 +79,26 @@ class life_admin_menu {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+		
+		class ButtonWanted : Life_RscButtonMenu {
+ 			idc = 2020;
+ 			//shortcuts[] = {0x00050000 + 2};
+ 			text = "Teleport";
+ 			onButtonClick = "closeDialog 0; [] execVM ""core\admin\teleportation.sqf"";";
+ 			x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+ 			y = 0.88 - (1 / 25);
+ 			w = (6.25 / 40);
+ 			h = (1 / 25);
+  		};	
+		
+		class ButtonCompensation : life_RscButtonMenu {
+ 			idc = 2022;
+ 			text = "Compensation";
+ 			onButtonClick = "closeDialog 0; [] execVM ""core\admin\compensation.sqf"";";
+ 			x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+ 			y = 0.88 - (1 / 25);
+ 			w = (6.25 / 40);
+ 			h = (1 / 25);
+  		};	
 	};
 };

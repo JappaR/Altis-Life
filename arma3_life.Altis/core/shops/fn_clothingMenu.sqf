@@ -160,6 +160,6 @@ if((life_clothing_purchase select 4) == -1) then
 			{[_x,true,true] call life_fnc_handleItem;} foreach life_oldBackpackItems;
 		};
 	};
-};
+}; 
 
-life_clothing_purchase = [-1,-1,-1,-1,-1];
+life_clothing_purchase = [-1,-1,-1,-1,-1]; 

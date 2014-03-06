@@ -39,6 +39,7 @@ _clothes = switch (life_clothing_store) do
 };
 
 if(count _clothes == 0) exitWith {};
+
 {
 	_details = [_x select 0] call life_fnc_fetchCfgDetails;
 	if(isNil {_x select 1}) then

@@ -47,9 +47,24 @@ class CfgSounds
   class Carlock
   {
     name = "Carlock";
-    sound[] = {"\sounds\carlock.mp3", 1, 1};
+    sound[] = {"\sounds\carlock.ogg", 1, 1};
     titles[] = {};
   };
+  
+  class Flashbang
+  {
+    name = "Flashbang";
+    sound[] = {"\sounds\flashbang.ogg", 1, 1};
+    titles[] = {};
+  };
+  
+  class Pickaxe
+  {
+    name = "Pickaxe";
+    sound[] = {"\sounds\pickaxe.ogg", 1, 1};
+    titles[] = {};
+  };
+  
 };
 
 class CfgNotifications

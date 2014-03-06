@@ -136,6 +136,8 @@ switch (_code) do
 						[[_veh,0], "life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 					};
 					systemChat "You have unlocked your vehicle.";
+					// Car lock sound (see description.ext for filepath)
+					_veh say3D "Carlock";
 				}
 					else
 				{
@@ -148,6 +150,8 @@ switch (_code) do
 						[[_veh,2], "life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 					};
 					systemChat "You have locked your vehicle.";
+					// Car lock sound (see description.ext for filepath)
+					_veh say3D "Carlock";
 				};
 			};
 		};

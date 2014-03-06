@@ -8,6 +8,7 @@
 private["_allowedItems","_primary","_handgun","_magazines","_uniform","_vest","_backpack","_items","_primitems","_secitems","_handgunitems","_uitems","_vitems","_bitems","_curWep"];
 
 //Pre-approved weapons / attachments
+/*
 _allowedItems =
 [
 	"arifle_sdar_F",
@@ -24,6 +25,7 @@ _allowedItems =
 	"muzzle_snds_H",
 	"muzzle_snds_L"
 ];
+*/
 
 //Old format / code
 _primary = primaryWeapon player;
@@ -40,8 +42,11 @@ _uitems = [];
 _vitems = [];
 _bitems = [];
 
+/*
 if(!(_primary in _allowedItems)) then {_primary = ""};
 if(!(_handgun in _allowedItems)) then {_handgun = ""};
+*/
+
 if(_uniform != "") then {{_uitems set[count _uitems,_x];} foreach (uniformItems player);};
 if(_vest != "") then {{_vitems set[count _vitems,_x];} foreach (vestItems player);};
 if(_backpack != "") then {{_bitems set[count _bitems,_x];} foreach (backPackItems player);};

@@ -186,44 +186,44 @@ sell_array =
 [
 	["apple",50],
 	["heroinu",1850],
-	["heroinp",2650],
+	["heroinp",3200],
 	["salema",45],
 	["ornate",40],
 	["mackerel",175],
 	["tuna",700],
 	["mullet",250],
 	["catshark",300],
-	["rabbit",65],
-	["oilp",3200],
-	["turtle",3000],
+	["rabbit",35],
+	["oilp",3500],
+	["turtle",4000],
 	["water",5],
 	["coffee",5],
 	["turtlesoup",1000],
 	["donuts",60],
 	["marijuana",2350],
-	["tbacon",25],
-	["lockpick",75],
-	["pickaxe",750],
+	["tbacon",75],
+	["lockpick",1000],
+	["pickaxe",1000],
 	["redgull",200],
-	["peach",55],
+	["peach",70],
 	["cocaine",3000],
 	["cocainep",5000],
 	["diamond",750],
-	["diamondc",2000],
-	["iron_r",3200],
+	["diamondc",4000],
+	["iron_r",2000],
 	["copper_r",1500],
-	["salt_r",1650],
-	["glass",1450],
+	["salt_r",1850],
+	["glass",2000],
 	["fuelF",500],
 	["spikeStrip",1200],
-	["cement",1950]
+	["cement",2000]
 ];
 __CONST__(sell_array,sell_array);
 
 buy_array = 
 [
 	["apple",65],
-	["rabbit",75],
+	["rabbit",90],
 	["salema",55],
 	["ornate",50],
 	["mackerel",200],
@@ -235,59 +235,118 @@ buy_array =
 	["turtlesoup",2500],
 	["donuts",120],
 	["coffee",10],
-	["tbacon",75],
-	["lockpick",150],
-	["pickaxe",1200],
+	["tbacon",150],
+	["lockpick",2500],
+	["pickaxe",2000],
 	["redgull",1500],
 	["fuelF",850],
-	["peach",68],
+	["peach",80],
 	["spikeStrip",2500]
 ];
 __CONST__(buy_array,buy_array);
 
 life_weapon_shop_array =
 [
-	["arifle_sdar_F",7500],
-	["hgun_P07_snds_F",650],
-	["hgun_P07_F",1500],
-	["Binocular",50],
-	["ItemGPS",45],
-	["ToolKit",75],
-	["FirstAidKit",65],
-	["Medikit",450],
-	["NVGoggles",980],
-	["16Rnd_9x21_Mag",15],
-	["20Rnd_556x45_UW_mag",35],
-	["ItemMap",35],
-	["ItemCompass",25],
-	["Chemlight_blue",50],
-	["Chemlight_yellow",50],
-	["Chemlight_green",50],
-	["Chemlight_red",50],
-	["hgun_Rook40_F",500],
-	["arifle_Katiba_F",5000],
-	["30Rnd_556x45_Stanag",65],
-	["20Rnd_762x51_Mag",85],
-	["30Rnd_65x39_caseless_green",50],
-	["DemoCharge_Remote_Mag",7500],
-	["SLAMDirectionalMine_Wire_Mag",2575],
-	["optic_ACO_grn",250],
-	["acc_flashlight",100],
-	["srifle_EBR_F",15000],
-	["arifle_TRG21_F",3500],
-	["optic_MRCO",5000],
-	["optic_Aco",850],
-	["arifle_MX_F",7500],
-	["arifle_MXC_F",5000],
-	["arifle_MXM_F",8500],
-	["MineDetector",500],
-	["optic_Holosight",275],
-	["acc_pointer_IR",175],
-	["arifle_TRG20_F",2500],
-	["SMG_01_F",1500],
-	["arifle_Mk20C_F",4500],
-	["30Rnd_45ACP_Mag_SMG_01",60],
-	["30Rnd_9x21_Mag",30]
+	// Tazer and P07
+	["hgun_P07_snds_F",1000],
+	["hgun_P07_F",2000],
+	["16Rnd_9x21_Mag",25],
+	
+	// Tazer Rifle
+	["arifle_sdar_F",5000],
+	["20Rnd_556x45_UW_mag",70],
+	
+	// Sting 9mm
+	["SMG_02_F",7500],
+	["30Rnd_9x21_Mag",150],
+	
+	// Katiba
+	["arifle_Katiba_F",15000],
+	["30Rnd_65x39_caseless_green",150],
+	
+	// MX SW
+	["arifle_MX_SW_Black_F",14000],
+	
+	
+	// MXM
+	["arifle_MXM_Black_F",15000],
+	["30Rnd_65x39_caseless_mag",150],
+	
+	// Rook40
+	["hgun_Rook40_F",2500],
+	
+	// ACPC2
+	["hgun_ACPC2_F",2500],
+	["9Rnd_45ACP_Mag",25], 
+	
+	// PDW2000
+	["hgun_PDW2000_F",10000],
+	
+	// Rahim
+	["srifle_DMR_01_F",25000],
+	["10Rnd_762x51_Mag",250],
+	
+	// TRG20
+	["arifle_TRG20_F",11500],
+	["30Rnd_556x45_Stanag",150],
+	
+	// 4-Five
+	["hgun_Pistol_heavy_01_F",3250],
+	["11Rnd_45ACP_Mag",25],
+	
+	// Vermin
+	["SMG_01_F",12500],
+	["30Rnd_45ACP_Mag_SMG_01",150],
+	
+	// Zubr
+	["hgun_Pistol_heavy_02_F",4250],
+	["6Rnd_45ACP_Cylinder",60],
+	
+	// MK20C
+	["arifle_Mk20C_F",10000],
+	
+	// MK18
+	["srifle_EBR_F",25000],
+	["20Rnd_762x51_Mag",200],
+	
+	// MK200
+	["LMG_Mk200_F",32500],
+	["200Rnd_65x39_cased_Box",250],
+	
+	// M320
+	["srifle_LRR_F",37500],
+	["7Rnd_408_Mag",350],
+	
+	// Zafir
+	["LMG_Zafir_F",37500],
+	["150Rnd_762x51_Box",250],
+	
+	// Weapon attachments
+	["acc_pointer_IR",750],
+	["optic_ARCO",2000],
+	["optic_Holosight",600],
+	["optic_Aco",750],
+	["acc_flashlight",350],
+	["optic_ACO_grn",1750],
+	["muzzle_snds_L",300],
+	["muzzle_snds_M",750],	
+	
+	// General items
+	["ItemGPS",50],
+	["Binocular",75],
+	["ToolKit",125],
+	["FirstAidKit",75],
+	["Medikit",500],
+	["NVGoggles",1000],
+	["Chemlight_blue",150],
+	["Chemlight_yellow",150],
+	["Chemlight_green",150],
+	["Chemlight_red",150],
+
+	// Special grenades
+	["B_UavTerminal",2500],
+	["HandGrenade_Stone",150],
+	["SmokeShell",375]
 ];
 __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 
@@ -335,6 +394,7 @@ life_garage_sell =
 	["I_Truck_02_transport_F",49800],
 	["I_Truck_02_covered_F",62000],
 	["B_Truck_01_transport_F",135000],
+	["B_Truck_01_covered_F",110000],
 	["B_Truck_01_box_F", 150000],
 	["O_MRAP_02_F",65000],
 	["B_Heli_Light_01_F",57000],

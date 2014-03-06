@@ -309,5 +309,16 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+		
+		
+ 		class ButtonFlip : Life_RscButtonMenu {
+ 			idc = 2014;
+ 			text = "Un-Flip";
+ 			onButtonClick = "[] execVM ""core\actions\fn_flipVehicle.sqf"";";
+ 			x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+ 			y = 0.85 - (1 / 25);
+ 			w = (6.25 / 40);
+ 			h = (1 / 25);
+ 		};		
 	};
 };

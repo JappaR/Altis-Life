@@ -31,7 +31,7 @@ switch (true) do
 	{
 		switch (true) do
 		{
-			case(__GETC__(life_coplevel) > 0) : {}; // Do nothing
+			case(__GETC__(life_coplevel) > 0) : {}; // Only Whitelist Cops
 		
 			case (__GETC__(life_adminlevel) > 0) : {}; //Do nothing
 			default {endMission "Loser";};

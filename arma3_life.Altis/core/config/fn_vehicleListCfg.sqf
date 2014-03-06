@@ -19,8 +19,7 @@ switch (_shop) do
 			["B_Quadbike_01_F",2500],
 			["C_Hatchback_01_F",9500],
 			["C_Offroad_01_F",12500],
-			["C_SUV_01_F",35000],
-			["C_Van_01_transport_F",40000]
+			["C_SUV_01_F",35000]
 		];
 	}; 
 	
@@ -31,8 +30,7 @@ switch (_shop) do
 			["B_Quadbike_01_F",2500],
 			["C_Hatchback_01_F",9500],
 			["C_Offroad_01_F",12500],
-			["C_SUV_01_F",35000],
-			["C_Van_01_transport_F",40000]
+			["C_SUV_01_F",35000]
 		];
 	};
 	
@@ -43,8 +41,7 @@ switch (_shop) do
 			["B_Quadbike_01_F",2500],
 			["C_Hatchback_01_F",9500],
 			["C_Offroad_01_F",12500],
-			["C_SUV_01_F",35000],
-			["C_Van_01_transport_F",40000]
+			["C_SUV_01_F",35000]
 		];
 	}; 
 	
@@ -55,54 +52,159 @@ switch (_shop) do
 			["B_Quadbike_01_F",2500],
 			["C_Hatchback_01_F",9500],
 			["C_Offroad_01_F",12500],
-			["C_SUV_01_F",35000],
-			["C_Van_01_transport_F",40000]
+			["C_SUV_01_F",35000]
 		];
 	}; 
 	
 	case "donator_1":
 	{
-		_return =
-		[
-			["B_Quadbike_01_F",500],
-			["C_Offroad_01_F",2500],
-			["C_SUV_01_F",20000]
-		];
-
-		if(__GETC__(life_donator) > 1) then
+		if(__GETC__(life_donator) == 1) then
 		{
-			_return set[count _return,["C_Van_01_Fuel_F",7500]];
-			_return set[count _return,["B_Truck_01_box_F",250000]];
-			_return set[count _return,["B_Heli_Light_01_F",200000]];
-			_return set[count _return,["O_Heli_Light_02_unarmed_F",600000]];
+			_return =
+			[
+				["B_Quadbike_01_F",2375],
+				["C_Hatchback_01_F",9025],
+				["C_Offroad_01_F",11875],
+				["C_SUV_01_F",33250],
+				["C_Van_01_transport_F",38000],
+				["C_Van_01_box_F",57000],
+				["I_Truck_02_transport_F",71250],
+				["I_Truck_02_covered_F",95000],
+				["B_Truck_01_transport_F",237500],
+				["B_Heli_Light_01_F",261000],
+				["O_Heli_Light_02_unarmed_F",332000]
+			];
 		};
-		if(__GETC__(life_donator) > 2) then
+	
+		if(__GETC__(life_donator) == 2) then
 		{
-			_return set[count _return,["C_Hatchback_01_sport_F",10000]];
-			_return set[count _return,["I_Heli_Transport_02_F",1200000]];
+			_return =
+			[
+				["B_Quadbike_01_F",2250],
+				["C_Hatchback_01_F",8550],
+				["C_Offroad_01_F",11250],
+				["C_SUV_01_F",31500],
+				["C_Van_01_transport_F",36000],
+				["C_Van_01_box_F",54000],
+				["I_Truck_02_transport_F",67500],
+				["I_Truck_02_covered_F",90000],
+				["B_Truck_01_transport_F",225000],
+				["B_Heli_Light_01_F",247500],
+				["O_Heli_Light_02_unarmed_F",315000]
+			];
+		};
+		if(__GETC__(life_donator) == 3) then
+		{
+			_return =
+			[
+				["B_Quadbike_01_F",2125],
+				["C_Hatchback_01_F",8075],
+				["C_Offroad_01_F",10625],
+				["C_SUV_01_F",29750],
+				["C_Van_01_transport_F",34000],
+				["C_Van_01_box_F",51000],
+				["I_Truck_02_transport_F",63750],
+				["I_Truck_02_covered_F",85000],
+				["B_Truck_01_transport_F",212500],
+				["B_Truck_01_covered_F",250000],
+				["B_Heli_Light_01_F",233000],
+				["O_Heli_Light_02_unarmed_F",297000]
+			];
+		};
+		if(__GETC__(life_donator) == 4) then
+		{
+			_return =
+			[
+				["B_Quadbike_01_F",1875],
+				["C_Hatchback_01_F",7125],
+				["C_Offroad_01_F",9375],
+				["C_SUV_01_F",26250],
+				["C_Van_01_transport_F",30000],
+				["C_Van_01_box_F",45000],
+				["I_Truck_02_transport_F",56250],
+				["I_Truck_02_covered_F",75000],
+				["B_Truck_01_transport_F",187500],
+				["B_Truck_01_covered_F",220000],
+				["B_Truck_01_box_F",350000],
+				["B_Heli_Light_01_F",206000],
+				["O_Heli_Light_02_unarmed_F",262000]
+			];
 		};
 	};
 	
 	case "donator_2":
 	{
-		_return =
-		[
-			["B_Quadbike_01_F",500],
-			["C_Offroad_01_F",2500],
-			["C_SUV_01_F",20000]
-		];
-
-		if(__GETC__(life_donator) > 1) then
+		if(__GETC__(life_donator) == 1) then
 		{
-			_return set[count _return,["C_Van_01_Fuel_F",7500]];
-			_return set[count _return,["B_Truck_01_box_F",250000]];
-			_return set[count _return,["B_Heli_Light_01_F",200000]];
-			_return set[count _return,["O_Heli_Light_02_unarmed_F",600000]];
+			_return =
+			[
+				["B_Quadbike_01_F",2375],
+				["C_Hatchback_01_F",9025],
+				["C_Offroad_01_F",11875],
+				["C_SUV_01_F",33250],
+				["C_Van_01_transport_F",38000],
+				["C_Van_01_box_F",57000],
+				["I_Truck_02_transport_F",71250],
+				["I_Truck_02_covered_F",95000],
+				["B_Truck_01_transport_F",237500],
+				["B_Heli_Light_01_F",261000],
+				["O_Heli_Light_02_unarmed_F",332000]
+			];
 		};
-		if(__GETC__(life_donator) > 2) then
+	
+		if(__GETC__(life_donator) == 2) then
 		{
-			_return set[count _return,["C_Hatchback_01_sport_F",10000]];
-			_return set[count _return,["I_Heli_Transport_02_F",1200000]];
+			_return =
+			[
+				["B_Quadbike_01_F",2250],
+				["C_Hatchback_01_F",8550],
+				["C_Offroad_01_F",11250],
+				["C_SUV_01_F",31500],
+				["C_Van_01_transport_F",36000],
+				["C_Van_01_box_F",54000],
+				["I_Truck_02_transport_F",67500],
+				["I_Truck_02_covered_F",90000],
+				["B_Truck_01_transport_F",225000],
+				["B_Heli_Light_01_F",247500],
+				["O_Heli_Light_02_unarmed_F",315000]
+			];
+		};
+		if(__GETC__(life_donator) == 3) then
+		{
+			_return =
+			[
+				["B_Quadbike_01_F",2125],
+				["C_Hatchback_01_F",8075],
+				["C_Offroad_01_F",10625],
+				["C_SUV_01_F",29750],
+				["C_Van_01_transport_F",34000],
+				["C_Van_01_box_F",51000],
+				["I_Truck_02_transport_F",63750],
+				["I_Truck_02_covered_F",85000],
+				["B_Truck_01_transport_F",212500],
+				["B_Truck_01_covered_F",250000],
+				["B_Heli_Light_01_F",233000],
+				["O_Heli_Light_02_unarmed_F",297000]
+			];
+		};
+		if(__GETC__(life_donator) == 4) then
+		{
+			_return =
+			[
+				["B_Quadbike_01_F",1875],
+				["C_Hatchback_01_F",7125],
+				["C_Offroad_01_F",9375],
+				["C_SUV_01_F",26250],
+				["C_Van_01_transport_F",30000],
+				["C_Van_01_box_F",45000],
+				["I_Truck_02_transport_F",56250],
+				["I_Truck_02_covered_F",75000],
+				["B_Truck_01_transport_F",187500],
+				["B_Truck_01_covered_F",220000],
+				["B_Truck_01_box_F",350000],
+				["B_Heli_Light_01_F",206000],
+				["O_Heli_Light_02_unarmed_F",262000]
+			];
 		};
 	};
 			
@@ -117,11 +219,12 @@ switch (_shop) do
 	case "civ_truck_1":
 	{
 		_return =
-		[
+		[			
+			["C_Van_01_transport_F",40000],
 			["C_Van_01_box_F",60000],
 			["I_Truck_02_transport_F",75000],
 			["I_Truck_02_covered_F",100000],
-			["B_Truck_01_transport_F",200000]
+			["B_Truck_01_transport_F",250000]
 		];	
 	};
 	
@@ -129,10 +232,11 @@ switch (_shop) do
 	{
 		_return =
 		[
+			["C_Van_01_transport_F",40000],
 			["C_Van_01_box_F",60000],
 			["I_Truck_02_transport_F",75000],
 			["I_Truck_02_covered_F",100000],
-			["B_Truck_01_transport_F",200000]
+			["B_Truck_01_transport_F",250000]
 		];	
 	};
 	
@@ -203,10 +307,15 @@ switch (_shop) do
 		["C_Offroad_01_F",5000]];
 		_return set[count _return,
 		["C_SUV_01_F",20000]];
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,
 			["B_MRAP_01_F",30000]];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_return set[count _return,
+			["B_MRAP_01_hmg_F",750000]];
 		};
 	};
 	
@@ -216,10 +325,15 @@ switch (_shop) do
 		["C_Offroad_01_F",5000]];
 		_return set[count _return,
 		["C_SUV_01_F",20000]];
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,
 			["B_MRAP_01_F",30000]];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_return set[count _return,
+			["B_MRAP_01_hmg_F",750000]];
 		};
 	};
 	
@@ -229,10 +343,15 @@ switch (_shop) do
 		["C_Offroad_01_F",5000]];
 		_return set[count _return,
 		["C_SUV_01_F",20000]];
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,
 			["B_MRAP_01_F",30000]];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_return set[count _return,
+			["B_MRAP_01_hmg_F",750000]];
 		};
 	};
 	
@@ -242,10 +361,15 @@ switch (_shop) do
 		["C_Offroad_01_F",5000]];
 		_return set[count _return,
 		["C_SUV_01_F",20000]];
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,
 			["B_MRAP_01_F",30000]];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_return set[count _return,
+			["B_MRAP_01_hmg_F",750000]];
 		};
 	};
 	
@@ -318,8 +442,6 @@ switch (_shop) do
 		{
 			_return set[count _return,
 			["B_Heli_Transport_01_F",200000]];
-			_return set[count _return,
-			["B_MRAP_01_hmg_F",750000]];
 		};
 	}; 
 	
@@ -330,6 +452,11 @@ switch (_shop) do
 			["C_Rubberboat",5000],
 			["C_Boat_Civil_01_F",22000]
 		];
+		if(__GETC__(life_donator) > 3) then
+		{
+			_return set[count _return,
+			["B_SDV_01_F",250000]];
+		}
 	};
 	
 	case "civ_ship_2":
@@ -339,6 +466,11 @@ switch (_shop) do
 			["C_Rubberboat",5000],
 			["C_Boat_Civil_01_F",22000]
 		];
+		if(__GETC__(life_donator) > 3) then
+		{
+			_return set[count _return,
+			["B_SDV_01_F",250000]];
+		}
 	};
 	
 	case "civ_ship_3":
@@ -348,6 +480,11 @@ switch (_shop) do
 			["C_Rubberboat",5000],
 			["C_Boat_Civil_01_F",22000]
 		];
+		if(__GETC__(life_donator) > 3) then
+		{
+			_return set[count _return,
+			["B_SDV_01_F",250000]];
+		}
 	};
 	
 	case "cop_ship_1":
@@ -363,16 +500,19 @@ switch (_shop) do
 	
 	case "donator_heli":
 	{
+		/*
 		_return =
 		[
 			["B_Heli_Light_01_F",100000],
 			["O_Heli_Light_02_unarmed_F",175000],
 			["I_Heli_Transport_02_F",650000]
 		];
+		*/
 	};
 	
 	case "donator_car":
 	{
+		/*
 		_return =
 		[
 			["B_Quadbike_01_F",500],
@@ -381,6 +521,7 @@ switch (_shop) do
 			["C_SUV_01_F",20000],
 			["C_Van_01_fuel_F",7500]
 		];
+		*/
 	};
 };
 
