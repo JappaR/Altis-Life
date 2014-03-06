@@ -12,6 +12,8 @@ _ret = false;
 
 switch (life_veh_shop) do
 {
+	case "civ_service_car": {_ret = license_civ_driver;};
+	case "civ_service_air": {_ret = license_civ_air;};
 	case "civ_car_1": {_ret = license_civ_driver;};
 	case "civ_car_2": {_ret = license_civ_driver;};
 	case "civ_car_3": {_ret = license_civ_driver;};

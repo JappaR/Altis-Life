@@ -11,6 +11,18 @@ _double = false;
 
 switch(life_veh_shop) do
 {
+	case "civ_service_air":
+	{
+		_sp = getMarkerPos "civ_service_air";
+		_dir = markerDir "civ_service_air";
+	};
+	
+	case "civ_service_car":
+	{
+		_sp = getMarkerPos "civ_service_car";
+		_dir = markerDir "civ_service_car";
+	};
+	
 	case "civ_car_1":
 	{
 		_sp = getMarkerPos "civ_car_1";

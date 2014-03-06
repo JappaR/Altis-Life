@@ -71,6 +71,7 @@ switch (playerSide) do
 		civ_gear = (_session select 8);
 		[] spawn life_fnc_civLoadGear;
 		__CONST__(life_coplevel,0);
+		__CONST__(life_serviceLevel,parseNumber(_session select 9));
 	};
 };
 

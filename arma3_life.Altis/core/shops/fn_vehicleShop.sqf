@@ -23,6 +23,18 @@ ctrlShow[2303,false];
 
 switch (life_veh_shop) do
 {
+	case "civ_service_air":
+	{
+		if(playerSide == west) exitWith {_kill = "You are not a civilian."};
+		ctrlSetText[2301,"Service Car Shop"];
+	};
+	
+	case "civ_service_car":
+	{
+		if(playerSide == west) exitWith {_kill = "You are not a civilian."};
+		ctrlSetText[2301,"Service Car Shop"];
+	};
+	
 	case "civ_car_1":
 	{
 		if(playerSide == west) exitWith {_kill = "You are not a civilian."};
