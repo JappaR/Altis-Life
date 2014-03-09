@@ -346,7 +346,7 @@ life_weapon_shop_array =
 	// Special grenades
 	["B_UavTerminal",2500],
 	["HandGrenade_Stone",150],
-	["SmokeShell",375]
+	["SmokeShellGreen",375]
 ];
 __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 

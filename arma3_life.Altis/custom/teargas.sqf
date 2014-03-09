@@ -12,9 +12,9 @@ resetCamShake; // resets the shake
 
 
 waituntil{
-((nearestObject [getpos player, "SmokeShell"]) distance player < 15) 
+((nearestObject [getpos player, "SmokeShellGreen"]) distance player < 15) 
 and 
-(getpos (nearestObject [getpos player, "SmokeShell"]) select 2 < 0.5)
+(getpos (nearestObject [getpos player, "SmokeShellGreen"]) select 2 < 0.5)
 };
 sleep 1.5;
 "dynamicBlur" ppEffectEnable true; // enables ppeffect

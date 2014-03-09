@@ -90,7 +90,7 @@ switch(_shop) do
                         ["optic_ACO_grn",nil,3500],
 						["optic_Holosight",nil,1200],
 						["HandGrenade_Stone","Flashbang",500],
-						["SmokeShell","Traenengas",750]
+						["SmokeShellGreen","Traenengas",750]
 					]
 				];
 			};
@@ -119,7 +119,7 @@ switch(_shop) do
 						["optic_Holosight",nil,1200],
 						["optic_ARCO",nil,4000],						
 						["HandGrenade_Stone","Flashbang",500],
-						["SmokeShell","Traenengas",750]				
+						["SmokeShellGreen","Traenengas",750]				
 					]
 				];
 			};
@@ -147,7 +147,7 @@ switch(_shop) do
 						["optic_ARCO",nil,4000],						
 						["B_UavTerminal",nil,5000],
 						["HandGrenade_Stone","Flashbang",500],
-						["SmokeShell","Traenengas",750]				
+						["SmokeShellGreen","Traenengas",750]				
 					]
 				];
 			};
