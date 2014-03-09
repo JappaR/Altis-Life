@@ -3079,8 +3079,8 @@ class Mission
 				};
 				class Item79
 				{
-					position[]={3514.6257,7.9606409,13018.854};
-					azimut=191.54077;
+					position[]={3252.229,6.5405178,12467.059};
+					azimut=252.25745;
 					special="NONE";
 					id=174;
 					side="CIV";
@@ -3090,7 +3090,7 @@ class Mission
 				};
 				class Item80
 				{
-					position[]={25808.063,22.004433,21494.76};
+					position[]={25721.777,24.720537,21610.24};
 					azimut=136.74728;
 					special="NONE";
 					id=175;
@@ -3101,8 +3101,8 @@ class Mission
 				};
 				class Item81
 				{
-					position[]={3510.4863,7.9098291,13019.412};
-					azimut=194.13197;
+					position[]={3253.0547,6.5140576,12463.932};
+					azimut=254.71513;
 					special="NONE";
 					id=176;
 					side="CIV";
@@ -3112,7 +3112,7 @@ class Mission
 				};
 				class Item82
 				{
-					position[]={25801.523,22.159889,21487.191};
+					position[]={25714.676,24.589756,21606.676};
 					azimut=136.71025;
 					special="NONE";
 					id=177;
@@ -3405,7 +3405,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Car Shop"",life_fnc_vehicleShop,""civ_service_car""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Car Shop"",life_fnc_vehicleShop,""civ_service_car""]; this addAction[""Vehicle Garage"",  { [[getPlayerUID player,playerSide,""Car"",player],""STS_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp = ""civ_service_car""; life_garage_type = ""Car"";  }]; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item108
 				{
@@ -3417,7 +3417,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false;this allowDamage false; this addAction[""Car Shop"",life_fnc_vehicleShop,""civ_service_air""];";
+					init="this enableSimulation false;this allowDamage false; this addAction[""Car Shop"",life_fnc_vehicleShop,""civ_service_air""]; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""STS_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Air"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp = ""civ_service_air"";}]; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -3840,7 +3840,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=572;
+		items=570;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -8773,7 +8773,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this allowDamage false;";
+			init="this allowDamage false; this setObjectTexture[0,""textures\t1lt3rr0r_ad.paa""];";
 		};
 		class Item497
 		{
@@ -9374,14 +9374,14 @@ class Mission
 		};
 		class Item557
 		{
-			position[]={3620.6799,11.460954,13040.76};
+			position[]={3620.1123,11.454896,13040.863};
 			azimut=-268.26599;
 			offsetY=0.0099999998;
 			id=781;
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
+			init="this enableSimulation false; this allowDamage false; this setObjectTexture[0,""textures\aac_ad.paa""];";
 			description="WhiteListed - Captain 2";
 		};
 		class Item558
@@ -9426,75 +9426,73 @@ class Mission
 		};
 		class Item562
 		{
-			position[]={3608.2976,14.063683,12932.013};
-			azimut=-808.27325;
-			offsetY=0.0099999998;
-			id=786;
-			side="EMPTY";
-			vehicle="Land_HelipadSquare_F";
-			skill=0.60000002;
-			description="WhiteListed - Captain 2";
-		};
-		class Item563
-		{
 			position[]={3624.2168,11.756579,13031.307};
 			azimut=91.022202;
 			offsetY=0.2;
-			id=787;
+			id=786;
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
 			init="this allowDamage false;";
 		};
-		class Item564
-		{
-			position[]={3582.498,12.667389,12842.278};
-			azimut=-807.95032;
-			offsetY=0.0099999998;
-			id=788;
-			side="EMPTY";
-			vehicle="Land_HelipadSquare_F";
-			skill=0.60000002;
-			description="WhiteListed - Captain 2";
-		};
-		class Item565
+		class Item563
 		{
 			position[]={3622.5581,11.542505,13036.112};
 			azimut=-763.92102;
 			offsetY=0.0099999998;
-			id=789;
+			id=787;
 			side="EMPTY";
 			vehicle="MapBoard_altis_F";
 			skill=0.60000002;
 			init="this allowDamage false;";
 			description="WhiteListed - Captain 2";
 		};
-		class Item566
+		class Item564
 		{
 			position[]={3639.2932,12.974452,13022.344};
 			azimut=-706.65637;
 			offsetY=0.0099999998;
-			id=790;
+			id=788;
 			side="EMPTY";
 			vehicle="Land_HelipadCivil_F";
 			skill=0.60000002;
 			description="WhiteListed - Captain 2";
 		};
-		class Item567
+		class Item565
 		{
 			position[]={3627.657,12.400136,13022.89};
 			azimut=-706.65637;
 			offsetY=0.0099999998;
-			id=791;
+			id=789;
 			side="EMPTY";
 			vehicle="Land_HelipadCivil_F";
 			skill=0.60000002;
 			description="WhiteListed - Captain 2";
 		};
-		class Item568
+		class Item566
 		{
 			position[]={3624.3252,12.553216,13017.163};
 			azimut=367.23914;
+			id=790;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item567
+		{
+			position[]={3631.5786,12.875218,13016.231};
+			azimut=367.23914;
+			id=791;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item568
+		{
+			position[]={3641.1201,13.244359,13015.186};
+			azimut=186.81921;
 			id=792;
 			side="EMPTY";
 			vehicle="Land_CncBarrierMedium4_F";
@@ -9503,29 +9501,9 @@ class Mission
 		};
 		class Item569
 		{
-			position[]={3631.5786,12.875218,13016.231};
-			azimut=367.23914;
-			id=793;
-			side="EMPTY";
-			vehicle="Land_CncBarrierMedium4_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
-		class Item570
-		{
-			position[]={3641.1201,13.244359,13015.186};
-			azimut=186.81921;
-			id=794;
-			side="EMPTY";
-			vehicle="Land_CncBarrierMedium4_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
-		class Item571
-		{
 			position[]={3636.1943,13.214287,13015.729};
 			azimut=186.81921;
-			id=795;
+			id=793;
 			side="EMPTY";
 			vehicle="Land_CncBarrierMedium4_F";
 			skill=0.60000002;
@@ -10244,7 +10222,7 @@ class Mission
 		};
 		class Item89
 		{
-			position[]={3246.1287,6.5118713,12458.554};
+			position[]={3256.5156,6.871357,12415.87};
 			name="Kavala Freight Yard_1_1";
 			text="Kavala Freight Yard";
 			type="mil_dot";
@@ -10818,7 +10796,7 @@ class Mission
 		};
 		class Item160
 		{
-			position[]={3512.6069,7.8781524,13022.087};
+			position[]={3253.7683,6.5912552,12465.938};
 			name="donator_area_1";
 			text="Donator Shop";
 			type="loc_ViewTower";
@@ -10826,7 +10804,7 @@ class Mission
 		};
 		class Item161
 		{
-			position[]={25806.559,22.071993,21490.455};
+			position[]={25717.436,24.640059,21608.438};
 			name="donator_area_1_1";
 			text="Donator Shop";
 			type="loc_ViewTower";
@@ -10834,31 +10812,31 @@ class Mission
 		};
 		class Item162
 		{
-			position[]={25811.875,21.897488,21486.896};
+			position[]={25724.92,24.545944,21599.82};
 			name="donator_1";
 			type="Empty";
 			angle=137.66393;
 		};
 		class Item163
 		{
-			position[]={25806.432,22.038872,21481.676};
+			position[]={25713.582,24.236931,21592.264};
 			name="donator_1_1";
 			type="Empty";
 			angle=141.31868;
 		};
 		class Item164
 		{
-			position[]={3511.1726,8.1471825,13012.769};
+			position[]={3241.1077,6.0152321,12474.04};
 			name="donator_2";
 			type="Empty";
-			angle=207.53745;
+			angle=250.27419;
 		};
 		class Item165
 		{
-			position[]={3508.6453,8.4346485,13003.628};
+			position[]={3241.9719,6.545742,12453.06};
 			name="donator_2_1";
 			type="Empty";
-			angle=196.38106;
+			angle=346.34958;
 		};
 		class Item166
 		{
@@ -11269,7 +11247,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={3343.7947,1.9002686,12958.503};
+			position[]={3345.1843,1.8635101,12959.336};
 			a=2;
 			b=8;
 			angle=-10.6675;

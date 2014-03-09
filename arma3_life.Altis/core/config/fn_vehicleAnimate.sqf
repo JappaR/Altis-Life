@@ -57,5 +57,13 @@ if(!_preset) then
 		{
 			_vehicle animate ["HideServices", 0]; 			
 		};
+		
+		case "service_heli":
+		{
+			_vehicle animate ["addDoors",1];
+			_vehicle animate ["addBackseats",1];
+			_vehicle animate ["addBenches",0];
+			{ _vehicle lockCargo [_x, true] } forEach [2,3,4,5];		
+		};
 	};
 };

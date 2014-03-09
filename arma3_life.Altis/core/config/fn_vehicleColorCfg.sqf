@@ -51,8 +51,7 @@ switch (_vehicle) do
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
 			/*["#(ai,64,64,1)Fresnel(1.3,7)","cop"],*/
 			["textures\police_offroad.paa","cop"],
-			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
-			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa","civ"]			
+			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"]			
 		];
 	};
 	
@@ -135,7 +134,8 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sunset_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
-			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"]
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
+			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"]
 		];
 	};
 	

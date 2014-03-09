@@ -27,10 +27,14 @@ switch (_shop) do
 	
 	case "civ_service_air":
 	{
-		_return = 
-		[			
-			["B_Heli_Light_01_F",253000]
-		];
+		_serviceLevel = __GETC__(life_serviceLevel);
+		
+		if(_serviceLevel > 0) then {
+			_return = 
+			[			
+				["B_Heli_Light_01_F",253000]
+			];
+		};
 	}; 
 	
 	case "civ_car_1":

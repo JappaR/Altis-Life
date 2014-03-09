@@ -635,25 +635,25 @@ player createDiarySubject ["donators","Donators"];
 				"
 				Folgende Vorteile könnt Ihr durch das Erreichen der verschiedenen Donator-Stufen freischalten. Preisrabatte beziehen sich auf ausgesuchte Fahrzeuge und sämtliche Waffen der vorherigen Donator Stufen. Sämtliche Vorteile gekennzeichnet mit *TODO* sind derzeit noch nicht im Spiel verfügbar!<br/><br/>
 				
-				Donator Stufe 1:<br/>
+				Donator Stufe 1 (5€):<br/>
 				- Waffen: 4-Five / Vermin<br/>
 				- Fahrzeuge: Neue Fahrzeug Farben *TODO*<br/>
 				- Zubehör: Knicklichter in allen Farben<br/>
 				- Preisrabatt: 5%<br/><br/>
-				Donator Stufe 2:<br/>
+				Donator Stufe 2 (10€):<br/>
 				- Waffen: Zubr / MK20C<br/>
 				- Zubehör: Leuchtmunition in allen Farben<br/>
-				- Preisrabatt: 10%<br/>
-				Donator Stufe 3:<br/>
+				- Preisrabatt: 10%<br/><br/>
+				Donator Stufe 3 (15€):<br/>
 				- Waffen: MK18 / MK200 <br/>
 				- Fahrzeuge: HEMTT (geschlossen) / U-Boot *TODO*<br/>				
-				- Preisrabatt: 15%<br/>
-				Donator Stufe 4:<br/>
+				- Preisrabatt: 15%<br/><br/>
+				Donator Stufe 4 (25€):<br/>
 				- Waffen: M320 / Zafir<br/>
 				- Fahrzeuge: HEMTT (mit Box)<br/>
 				- Zubehör: Leuchtmunition in allen Farben<br/>
-				- Preisrabatt: 25%<br/>
-				Donator Stufe 5:<br/>
+				- Preisrabatt: 25%<br/><br/>
+				Donator Stufe 5 (50€):<br/>
 				- Fahrzeuge: Eigenes Fahrzeug Texturen Design<br/><br/>
 				
 				Alle Vorteile aus den vorhergehenden Donator Stufen sind natürlich auch für die darüberliegenden Stufen verfügbar.<br/>

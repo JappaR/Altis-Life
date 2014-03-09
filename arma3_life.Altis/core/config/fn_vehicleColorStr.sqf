@@ -24,8 +24,7 @@ switch (_vehicle) do
 			case 5: {_color = "Blue / White"};
 			case 6: {_color = "Black"};
 			case 7: {_color = "Black"};
-			case 8: {_color = "Taxi"};
-			case 9: {_color = "AAC"};
+			case 8: {_color = "AAC"};
 		};
 	};
 	
