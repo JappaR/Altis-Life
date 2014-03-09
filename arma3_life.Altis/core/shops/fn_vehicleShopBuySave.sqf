@@ -278,11 +278,10 @@ if(playerSide == west) then
 	};
 };
 
-_serviceLevel = __GETC__(life_serviceLevel);	
-if ((_serviceLevel > 0) && (_veh == "C_Offroad_01_F")) then {
+if ((life_veh_shop == "civ_service_car") && (_veh == "C_Offroad_01_F")) then {
 	[_vehicle,"service_offroad",true] call life_fnc_vehicleAnimate;
 };
-if ((_serviceLevel > 0) && (_veh == "B_Heli_Light_01_F")) then {
+if ((life_veh_shop == "civ_service_air") && (_veh == "B_Heli_Light_01_F")) then {
 	[_vehicle,"service_heli",true] call life_fnc_vehicleAnimate;
 };
 

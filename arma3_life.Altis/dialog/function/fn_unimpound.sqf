@@ -23,4 +23,8 @@ if(life_atmcash < _price) exitWith {hint format["You don't have $%1 in your bank
 [[_vid,_pid,(getMarkerPos life_garage_sp),_unit,_price],"STS_fnc_spawnVehicle",false,false] spawn life_fnc_MP;
 hint "Spawning vehicle please wait...";
 
+if (life_garage_sp == "civ_service_car") then {
+	[_vehicle,"service_offroad",true] call life_fnc_vehicleAnimate;
+};
+
 life_atmcash = life_atmcash - _price;
