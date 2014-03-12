@@ -22,7 +22,7 @@ if(life_cash < life_ticket_val) exitWith
 };
 
 life_cash = life_cash - life_ticket_val;
-[[[life_ticket_val],{life_atmcash = life_atmcash + ((_this select 0)*0.2);}],"BIS_fnc_call",life_ticket_cop,false] spawn life_fnc_MP;
+[[[life_ticket_val],{life_atmcash = life_atmcash + ((_this select 0)*0.5);}],"BIS_fnc_call",life_ticket_cop,false] spawn life_fnc_MP;
 life_ticket_paid = true;
 
 [[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;

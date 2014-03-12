@@ -11,8 +11,6 @@
 #include "bank.hpp"
 #include "veh_shop.hpp"
 #include "shops.hpp"
-#include "gcam_config.hpp"
-#include "gcam_component.hpp"
 #include "ui.hpp"
 #include "admin_menu.hpp"
 #include "cell_phone.hpp"
@@ -22,3 +20,4 @@
 #include "trunk.hpp"
 #include "spawnSelection.hpp"
 #include "chop_shop.h"
+#include "pInteraction.h"
